@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================
+   🎨 BRAND VARIABLES
+   ========================= */
+:root {
+  --color-dark: #0b1120;
+  --color-secondary: #111827;
+  --color-card: #1f2937;
+  --color-text-primary: #f9fafb;
+  --color-text-secondary: #9ca3af;
+  --color-blue: #3b82f6;
+  --color-green: #10b981;
+  --color-cyan: #06b6d4;
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(90deg, #3b82f6 0%, #06b6d4 100%);
+  --gradient-secondary: linear-gradient(90deg, #3b82f6 0%, #10b981 100%);
+
+  /* Shadows */
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+/* =========================
+   🌐 GLOBAL STYLES
+   ========================= */
+body {
+  background-color: var(--color-dark);
+  color: var(--color-text-primary);
+  font-family: "Inter", sans-serif;
+}
+
+/* =========================
+   🔘 BUTTON STYLES (Hover Effects)
+   ========================= */
+.btn-primary:hover {
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4);
+  opacity: 0.9;
+}
+
+.btn-secondary:hover {
+  background: rgba(59, 130, 246, 0.1);
+  color: white;
+}
